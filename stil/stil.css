@@ -1,0 +1,68 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #F4F6F8;
+    color: #222;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #5c1a2b;
+}
+.logo {
+    height: 55px;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover, .aktivan {
+    color: #f2b544;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.kartice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.kartica {
+    flex: 1 1 250px;
+    background: #5c1a2b;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+.kartica:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+ 
+    }
